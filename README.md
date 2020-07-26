@@ -5,7 +5,7 @@ Home: https://python-hvac.org/
 
 Package license: Apache Software
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: HashiCorp Vault API client
 
