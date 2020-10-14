@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://python-hvac.org/
-  license: Apache Software
+  license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE.txt
   summary: HashiCorp Vault API client
