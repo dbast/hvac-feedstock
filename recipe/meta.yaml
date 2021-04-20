@@ -11,15 +11,16 @@ source:
 
 build:
   number: 0
+  noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - requests >=2.21.0
   run:
-    - python
+    - python >=3.6
     - requests >=2.21.0
 
 test:
@@ -31,6 +32,10 @@ test:
     - hvac.api.system_backend
     - hvac.constants
     - hvac.v1
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://python-hvac.org/
