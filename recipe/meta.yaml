@@ -1,5 +1,5 @@
 {% set name = "hvac" %}
-{% set version = "0.10.11" %}
+{% set version = "0.10.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 38c6eb819199b57b5d8cf6eeee1ce105253bb759e6708f7e3db64c4df04d7c0f
+  sha256: 4c4e0e3d5cd95438ab5d1d9375a2d5a9dd798840549819682f7a25292401457a
 
 build:
   number: 0
