@@ -1,5 +1,5 @@
 {% set name = "hvac" %}
-{% set version = "0.11.2" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f905c59d32d88d3f67571fe5a8a78de4659e04798ad809de439f667247d13626
+  sha256: 079dca58856dee6646ed5a2f2283809c16d2deedde1e9e9615b2910324a4b969
 
 build:
   number: 0
@@ -18,9 +18,9 @@ requirements:
   host:
     - pip
     - python >=3.6
-    - requests >=2.21.0
   run:
     - python >=3.6
+    - pyhcl
     - requests >=2.21.0
 
 test:
@@ -49,3 +49,4 @@ about:
 extra:
   recipe-maintainers:
     - mariusvniekerk
+    - dbast
